@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
+h1 { margin:0;
+  font-size: 2.8em !important;}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.waves-button-input{
+  color:white !important;
+
+}
+.btn-devise{
+  width:50%;
+  padding:8px 0 8px 0;
+  height:55px;
+}
+
+.checkale{
+  border:1px solid #000 !important
+}
+
+.show-img{
+  padding-right: 3%;
+}
+.show-titolo{
+  margin:0;
+  font-size: 2.8em;
+}
+.show-price{
+  font-size: 1.8em;
+}
+.show-p{
+  font-size: 1.4em;
+}
+
+
+.form_all{
+  font-size: .8rem;
+  color: #9e9e9e
+}
+.borderato{
+  border-bottom: 1px solid #9e9e9e;
+}
+.btn{
+  width: 11.5em !important
+}
+
+.card-image{
+  /*height:350px;*/
+}
+
+.pagination{
+  font-size: 2em !important;
+}
