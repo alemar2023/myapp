@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+
   get 'pages/home'
   get 'pages/about'
   get 'pages/contact'
-  devise_for :users
-  get 'home/about'
-  get 'home/contact'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-  get "about" => "pages/about"
+  get "about" => "pages#about"
 end
