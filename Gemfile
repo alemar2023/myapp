@@ -52,3 +52,4 @@ end
 gem 'sass-rails'
 gem 'materialize-sass'
 gem 'devise'
+gem 'kt-paperclip'
