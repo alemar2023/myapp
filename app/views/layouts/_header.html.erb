@@ -1,3 +1,16 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script>
+    <!-- this part is important! -->
+    $(document).ready(function () {
+        $(".button-collapse").sidenav();
+    });
+</script>
+
 <header class="navbar-fixed">
 
   <nav class=" green darken-3">
@@ -6,6 +19,7 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
       <ul class="right hide-on-med-and-down">
+        <li><%= link_to "New item", new_item_path %></li>
         <li><%= link_to "Items", items_path  %></li>
         <li><%= link_to "About" , about_path %></li>
 
@@ -36,12 +50,6 @@
   <% end  %>
 
 </ul>
-<script>
-    M.AutoInit();
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
-    });
-</script>
+
 
 
