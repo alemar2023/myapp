@@ -1,0 +1,18 @@
+<h1 class="center">Modifica Articolo  "<%= @item.title %>"</h1>
+
+
+
+<br>
+<%= render "form", item: @item %>
+
+
+<br>
+
+<div >
+  <%= link_to "Scheda Articolo", @item, class: "btn" %> &nbsp;
+  <%= link_to "Torna a Shop", items_path , class: "btn" %>
+</div>
+
+
+
+

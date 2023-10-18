@@ -1,0 +1,43 @@
+
+
+
+<div id="items">
+  <div class="row">
+
+  <% @items.each do |try| %>
+
+      <div class="col s12  m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <%= link_to try do %>
+              <%= image_tag try.cover.url(:medium) %>
+            <% end %>
+
+
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4" style="text-transform:capitalize !important"> <%= try.title %></span>
+
+            <div> <span>  <%= number_to_currency(try.price) %></span><i class="material-icons right">more_vert</i>
+
+            </div>
+          </div>
+
+          <div class="card-action" style="text-align:center;padding:5px  !important;line-height:40px !important;margin:0 !important;display: grid !important;grid-template-columns:auto ;">
+
+              <%= link_to "Add Cart", try , class: "btn-item" %>
+
+          </div>
+        </div>
+
+      </div>
+
+  <% end %>
+
+</div>
+  <p>   </p>
+<div class="center">    <%= will_paginate @items %></div>
+
+
+
+</div>

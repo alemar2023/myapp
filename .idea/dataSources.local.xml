@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="RM-232.10072.21">
+    <data-source name="postgres@myapp_dev" uuid="826712e2-c9bc-4d06-9531-076146e09c40">
+      <database-info product="PostgreSQL" version="14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.9" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>alexj</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="myapp: development" uuid="f5855d2d-c930-4c71-8247-97428f71cd8a">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>alexj</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="myapp: test" uuid="b1e4d1b6-abc2-4e1b-94a6-b4aaa654ec92">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>alexj</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="myapp: production" uuid="8413d4f2-ab3c-4a8d-ba8d-8b042e440fa5">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>myapp</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="myapp: default" uuid="1c564616-350f-4a43-b803-a45032bbeb02">
+      <database-info product="PostgreSQL" version="14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.9" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>alexj</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
