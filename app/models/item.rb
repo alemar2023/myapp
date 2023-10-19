@@ -16,4 +16,8 @@ class Item < ApplicationRecord
   validates :cover, attachment_presence: true
   #validates :allegato, attachment_presence: true
 
+  def mycustomfun
+    self.title.upcase
+  end
+
 end

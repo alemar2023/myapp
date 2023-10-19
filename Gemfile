@@ -55,3 +55,7 @@ gem 'devise'
 gem 'kt-paperclip'
 gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-materialize', git: 'https://github.com/mldoscar/will_paginate-materialize', branch: 'master'
+
+
+gem 'coffee-rails'
+gem 'uglifier'

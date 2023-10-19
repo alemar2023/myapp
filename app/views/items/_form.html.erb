@@ -19,7 +19,7 @@
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "borderato" %>
   </div>
 
   <div>
@@ -33,21 +33,21 @@
   </div>
   <div class="borderato">
     <p class="form_all">Carica un'immagine da utilizzare per il tuo contenuto/articolo </p>
-   img <%= form.file_field :cover %><br>
+    <%= form.file_field :cover %><br>
     <br>
   </div>
 
-  <br><br>
+  <br>
   <div class="borderato">
     <br>
     <p class="form_all">Carica il contenuto/articolo che vuoi mettere in vendita (formati supportati: Powerpoint, Excel, PDF, Word, Immagini e Mp3)</p>
     <%= form.file_field :allegato %>
     <br>
-    <br>
+     <br>
   </div>
   <br>
   <div>
-    <%= form.submit 'Salva Contenuto' , class: "btn  light-blue darken-3" %>
+    <%= form.submit 'Salva' , class: "btn  light-blue darken-3" %>
   </div>
   <br>
 <% end %>
